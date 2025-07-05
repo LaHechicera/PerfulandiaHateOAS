@@ -15,6 +15,8 @@ La arquitectura del servicio de Perfulandia con sus servicios y clases:
 Perfulandia./
 
 ├── pedidoservice/📦
+│   └── assembler📂
+│       └── PedidoAssembler.java
 │   └── controller📂
 │       └── PedidoController.java
 │   └── model📂
@@ -24,9 +26,12 @@ Perfulandia./
 │       └── PedidoRepository.java
 │   └── service📂
 │       └── PedidoService.java
+│   └── DataLoader
 └── 
 
 ├── carritoservice/📦
+│   └── assembler📂
+│       └── CarritoAssembler.java
 │   └── controller📂
 │       └── CarritoController.java
 │   └── model📂
@@ -36,9 +41,12 @@ Perfulandia./
 │       └── CarritoRepository.java
 │   └── service📂
 │       └── CarritoService.java
+│   └── DataLoader
 └── 
 
 ├── productservice/📦
+│   └── assembler📂
+│       └── ProductoAssembler.java
 │   └── controller📂
 │       └── ProductoController.java
 │   └── model📂
@@ -48,9 +56,12 @@ Perfulandia./
 │       └── ProductoRepository.java
 │   └── service📂
 │       └── ProductoService.java
+│   └── DataLoader
 └── 
 
 ├── usuarioservice/📦
+│   └── assembler📂
+│       └── UsuarioAssembler.java
 │   └── controller📂
 │       └── UsuarioController.java
 │   └── model📂
@@ -59,6 +70,7 @@ Perfulandia./
 │       └── UsuarioRepository.java
 │   └── service📂
 │       └── UsuarioService.java
+│   └── DataLoader
 └── 
 ```
 ### Microservicios Desarrollados
@@ -138,6 +150,33 @@ Endpoints Microservicio Pedido
 - GET id a MS Carrito: http://localhost:8084/api/pedido/estado/{id}
 - POST: http://localhost:8084/api/pedido
 - DELETE: http://localhost:8084/api/pedido
+
+## 📮 Endpoints de Pruebas con HateOAS
+
+Endpoints TESTS Microservicio Usuario 
+- GET: http://localhost:8081/api/v1/usuario/hateoas/get
+- GET por ID: http://localhost:8081/api/v1/usuario/hateoas/get/{id}
+- POST: http://localhost:8081/api/v1/usuario/hateoas/post
+- DELETE por ID: http://localhost:8081/api/v1/usuario/hateoas/delete/{id}
+
+Endpoints TESTS Microservicio Producto
+- GET: http://localhost:8082/api/producto/hateoas/get
+- GET por ID: http://localhost:8082/api/producto/hateoas/get/{id}
+- POST: http://localhost:8082/api/producto/hateoas/post
+- DELETE por ID: http://localhost:8082/api/producto/hateoas/delete/{id}
+
+Endpoints TESTS Microservicio Carrito
+- GET: http://localhost:8083/api/carrito/hateoas/get
+- GET por ID: http://localhost:8083/api/carrito/hateoas/get/{id}
+- POST: http://localhost:8083/api/carrito/hateoas/post
+- DELETE por ID: http://localhost:8083/api/carrito/hateoas/delete/{id}
+
+Endpoints TESTS Microservicio Pedido
+- GET: http://localhost:8084/api/pedido/hateoas/get
+- GET por ID: http://localhost:8084/api/pedido/hateoas/get/{id}
+- POST: http://localhost:8084/api/pedido/hateoas/post
+- DELETE por ID: http://localhost:8084/api/pedido/hateoas/delete/{id}
+
 
 ## 🧑‍💻 Integrantes del Equipo
 
